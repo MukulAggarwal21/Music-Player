@@ -1,0 +1,150 @@
+body {
+    background-color: green;
+    transition: background-color .5s;
+
+}
+
+
+.container {
+    height: 95vh;  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.details {
+    align-items: center;
+    /* align-content: center; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    justify-content: center;
+
+    /* ********************************************************* */
+}
+
+.PLAYING-NO {
+    font-size: 1.5rem;
+}
+
+.pic {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: URL("./headphone\ image.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    
+}
+
+.Music-name {
+    font-size: 3rem;
+}
+
+.Artist {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+
+    
+}
+.prv-button{
+    margin-right: 40px;
+}
+.forward-button{
+    margin-left: 40px;
+}
+
+.prv-button .play-button .forward-button {
+    opacity: 0.8;
+    padding: 25px;
+    transition: opacity .2s; 
+    /* ? upper */
+ 
+
+}
+
+.prv-button:hover .play-button:hover .forward-button:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.slider {
+    display: flex;
+    width: 75%;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.time-slider,
+.vol-slider {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    height: 10px;
+    background-color: blue;
+    opacity: .7;
+    /* -webkit-transition: .2s;   */
+    /* what it does?*/
+    transition: opacity .2s;
+}
+
+
+
+/* Modify the appearance of the slider thumb */
+.time-sliderslider::-webkit-slider-thumb,
+.vol-sliderslider::-webkit-slider-thumb {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    width: 150px;
+    height: 150px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+
+.time-slider {
+    width: 70%;
+}
+
+.vol-slider {
+    width: 30%;
+}
+
+
+.current-time, .total-duration {
+    padding: 10px;
+  }
+
+
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+
+}
+
+/* Change the mouse cursor to a pointer
+when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+    cursor: pointer;
+}
