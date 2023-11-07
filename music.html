@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="stylesheet"   href="./music.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <!-- Display details -->
+        <div class="details">
+            <div class="PLAYING-NO">A OF B</div>
+            <div class="pic"></div>
+            <div class="Music-name">Music Name</div>
+            <div class="Artist">Artist</div>
+        </div>
+
+        <!-- Buttons description  -->
+        <div class="buttons">
+            <div class="prv-button" onclick="prvbutton()">
+                <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="play-button" onclick="play_pausebutton()">
+                <i class="fa fa-play-circle fa-5x"></i>
+
+            </div>
+            <div class="forward-button" onclick="frwdbutton()">
+                <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+
+        <!-- time slider -->
+        <div class="slider">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="time-slider" onchange=" timing_slider()">
+            <div class="total-duration ">00:00</div>
+        </div>
+
+        <!-- Volume slider -->
+        <div class="slider">
+            <i class="fa fa-volume-down" aria-hidden="true"></i>
+            <input type="range" min="1" max="10" value="99" class="volume-slider" onchange="volume_slider()">
+            <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </div>
+    </div>
+   
+    <script src="./music.js"></script>
+
+</body>
+
+</html>
